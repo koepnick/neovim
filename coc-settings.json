@@ -1,0 +1,47 @@
+{
+  "coc.preferences.triggerSignatureHelp": true,
+  "coc.preferences.colorSupport": true,
+  "coc.source.python.enable": true,
+  "coc.source.python.shortcut": true,
+  "coc.source.python.priority": 10000,
+  "markdownlint.config": {
+    "first-line-h1": false,
+    "first-line-heading": false,
+    "first-header-h1": false,
+    "MD041": false
+  },
+  "diagnostic-languageserver.enable": true,
+  "diagnostic-languageserver.filetypes": {
+    "vim": "vint",
+    "email": "languagetool",
+    "markdown": [ "/home/skoepnick/.gem/ruby/2.6.0/bin/mdl"],
+    "pandoc": [ "/home/skoepnick/.gem/ruby/2.6.0/bin/mdl"],
+    "sh": "shellcheck"
+  },
+  "list.maxPreviewHeight": 42,
+  "list.maxHeight": 40,
+  "signature.target": "echo",
+  "list.normalMappings": {
+    "t": "action:tabe",
+    "v": "action.vsplit",
+    "s": "action.split"
+  },
+  "python.jediEnabled": false,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Path": "/usr/bin/flake8",
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    },
+    "efm": {
+        "command": "efm-langserver",
+        "args": [],
+        "filetypes": ["markdown"]
+    }
+  }
+}
