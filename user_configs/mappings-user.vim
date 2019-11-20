@@ -49,8 +49,8 @@ nnoremap Tq  <c-w>q
 " I find myself using tabs more often than buffers or splits
 nnoremap <left> :tabp<cr>
 nnoremap <right> :tabn<cr>
-nnoremap <up> <c-w>w
-nnoremap <down> <c-w>W
+nnoremap <up> <c-w>W
+nnoremap <down> <c-w>w
 
 " tmux will pass these through
 " CTRL For Panes
