@@ -43,5 +43,6 @@
         "args": [],
         "filetypes": ["markdown"]
     }
-  }
+  },
+  "snippets.userSnippetsDirectory": "/home/skoepnick/.config/nvim/snips"
 }

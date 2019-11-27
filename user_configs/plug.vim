@@ -23,10 +23,12 @@ call plug#begin('~/.local/share/nvim/plugins')
     " IDE 
     Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
     Plug 'nvie/vim-flake8', { 'for': ['python'] }
+    Plug 'tmhedberg/SimpylFold', { 'for': ['python'] }
     Plug 'liuchengxu/vista.vim'
     Plug 'thaerkh/vim-workspace'
     Plug 'webdevel/tabulous'
     Plug 'glacambre/firenvim'
+    Plug 'SirVer/ultisnips'
 
     "   Text objects
     Plug 'kana/vim-textobj-user', {'for': ['markdown', 'pandoc']}

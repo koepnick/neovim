@@ -164,6 +164,7 @@ call LoadSource('mappings-user.vim')
 call LoadSource('vista-tagbar.vim')
 call LoadSource('functions.vim')
 call LoadSource('tabs.vim')
+call LoadSource('snippets.vim')
 
 " Previously needed configuration. Leaving here just in case
 " Wayland clipboard provider that strips carriage returns (GTK3 issue).
