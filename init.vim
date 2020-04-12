@@ -154,7 +154,8 @@ augroup END
 
 autocmd InsertEnter * let save_cwd = getcwd() | set autochdir
 autocmd InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
-
+" Auto change CWD to current file directory
+autocmd BufEnter * silent! lcd %:p:h
 
 " Manually calling these so I can comment them out for future debugging
 call LoadSource('statusline.vim')

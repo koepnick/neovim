@@ -68,6 +68,25 @@ setlocal fo-=c fo-=r fo-=o
 let g:gruvbox_hls_cursor='blue'
 let g:gruvbox_italic=1
 
+
+let g:coiled_snake_set_foldtext=1
+let g:coiled_snake_set_foldexpr=1
+let g:coiled_snake_foldtext_flags=['doc', 'static']
+
+function! MergeTab()
+    let bufnums = tabpagebuflist()
+    hide tabclose
+    topleft vsplit
+    for n in bufnums
+        execute 'sbuffer ' . n
+        wincmd _
+    endfor
+    wincmd t
+    quit
+    wincmd =
+endfunction
+command! MergeTab call MergeTab()
+
 let s:code_actions = []
 
 func! ActionMenuCodeActions() abort
@@ -86,3 +105,4 @@ func! ActionMenuCodeActionsCallback(index, item) abort
     let l:response = CocAction('doCodeAction', l:selected_code_action)
   endif
 endfunc
+

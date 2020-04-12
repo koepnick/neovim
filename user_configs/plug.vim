@@ -23,7 +23,7 @@ call plug#begin('~/.local/share/nvim/plugins')
     " IDE 
     Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
     Plug 'nvie/vim-flake8', { 'for': ['python'] }
-    Plug 'tmhedberg/SimpylFold', { 'for': ['python'] }
+    Plug 'kalekundert/vim-coiled-snake', { 'for': ['python'] }
     Plug 'liuchengxu/vista.vim'
     Plug 'thaerkh/vim-workspace'
     Plug 'webdevel/tabulous'
