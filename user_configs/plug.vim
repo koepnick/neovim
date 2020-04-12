@@ -29,12 +29,15 @@ call plug#begin('~/.local/share/nvim/plugins')
     Plug 'webdevel/tabulous'
     Plug 'glacambre/firenvim'
     Plug 'SirVer/ultisnips'
+    Plug 'kizza/actionmenu.nvim'
+    Plug 'skywind3000/vim-quickui'
+    Plug 'tell-k/vim-autopep8', { 'for': ['python'] }
 
     "   Text objects
-    Plug 'kana/vim-textobj-user', {'for': ['markdown', 'pandoc']}
-    Plug 'reedes/vim-textobj-sentence', {'for': ['markdown', 'pandoc']}
-    Plug 'junegunn/goyo.vim', {'for': ['markdown', 'md', 'multimarkdown', 'mmd', 'pandoc']}
-    Plug 'godlygeek/tabular', { 'for': ['markdown', 'text'] }
+    Plug 'kana/vim-textobj-user', {'for': ['markdown', 'pandoc', 'rst']}
+    Plug 'reedes/vim-textobj-sentence', {'for': ['markdown', 'pandoc', 'rst']}
+    Plug 'junegunn/goyo.vim', {'for': ['markdown', 'md', 'multimarkdown', 'mmd', 'pandoc', 'rst']}
+    Plug 'godlygeek/tabular', { 'for': ['markdown', 'text', 'rst'] }
     Plug 'vim-pandoc/vim-pandoc',  {'for': ['pandoc']}
     Plug 'vim-pandoc/vim-pandoc-syntax',  {'for': ['pandoc']}
     
@@ -45,6 +48,7 @@ call plug#begin('~/.local/share/nvim/plugins')
     Plug 'reedes/vim-litecorrect', {'for': ['pandoc']}
     Plug 'reedes/vim-lexical', {'for': ['pandoc']}
     Plug 'beloglazov/vim-online-thesaurus', {'for': ['pandoc']}
+    Plug 'kamykn/spelunker.vim'
 
     " Not strictly necessary
     Plug 'chrisbra/unicode.vim'
@@ -59,6 +63,8 @@ call plug#begin('~/.local/share/nvim/plugins')
     " Language Integration
     Plug 'hashivim/vim-vagrant', { 'for': ['vagrant'] }
     Plug 'pearofducks/ansible-vim', { 'for': ['yaml', 'ini'] }
+    Plug 'Rykka/riv.vim', { 'for': ['rst'] }
+    Plug 'Rykka/InstantRst', { 'for': ['rst'] }
 
 
     " Not sold on these
