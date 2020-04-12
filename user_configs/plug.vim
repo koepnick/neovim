@@ -27,7 +27,6 @@ call plug#begin('~/.local/share/nvim/plugins')
     Plug 'liuchengxu/vista.vim'
     Plug 'thaerkh/vim-workspace'
     Plug 'webdevel/tabulous'
-    Plug 'glacambre/firenvim'
     Plug 'SirVer/ultisnips'
     Plug 'kizza/actionmenu.nvim'
     Plug 'skywind3000/vim-quickui'
